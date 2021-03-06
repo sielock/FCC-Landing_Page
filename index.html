@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <head>
+      <link rel="stylesheet" href="styles.css">
+    </head>
     <body>
         <header id='header'>
           <div class="img-container">
@@ -14,38 +17,60 @@
         </header>
         
         <div id="basics">
-          <h2>Basics</h2>
+          <h1>Basics</h1>
+            <ul>
+              <h2><li>Who We Are</li></h2>
+              <h2><li>What We Do</li></h2>
+              <h2><li>Why We Do It</li></h2>
+            </ul>
         </div>
         
         <div id="background">
-          <h2>Background</h2>
+          <h1>Background</h1>
           <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/nyDnQQSUfL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         
         <div id="beans">
-          <h2>Beans</h2>
-          <div id="prod1">
-            <h3>Light Roast</h3>
-            <img src="https://yi-files.s3.eu-west-1.amazonaws.com/products/774000/774985/1322675-cover.jpg" alt="light roast" id="light-roast">
-          </div>
-          <div id="prod2">
-            <h3>Medium Roast</h3>
-            <img src="https://s3-eu-west-1.amazonaws.com/yi-files/content/2018/11/5bf55206a5c06.jpg" alt="medium roast" id="medium-roast">
-          </div>
-          <div id="prod3">
-            <h3>Dark Roast</h3>
-            <img src="https://s3-eu-west-1.amazonaws.com/yi-files/content/2018/02/5a8af7949d519.jpg" alt="dark roast">
+          <h1>Beans</h1>
+            <div id="products">
+              <div id="prod1">
+                <h2>Light Roast</h2>
+                <img src="https://yi-files.s3.eu-west-1.amazonaws.com/products/774000/774985/1322675-cover.jpg" alt="light roast" id="light-roast">
+                <figcaption>
+                  Not sure where to start? Check out our medium roast offerings. These coffees are not as wild as our light roasts, but not as heavy as our dark roasts.
+                  Many of our offerings here serve as exceptionally tasty compromises between the extremes. Think standard coffee flavors, but with hints of flavor that 
+                  can be found in our other roasts.
+                </figcaption>
+              </div>
+              <div id="prod2">
+                <h2>Medium Roast</h2>
+                <img src="https://s3-eu-west-1.amazonaws.com/yi-files/content/2018/11/5bf55206a5c06.jpg" alt="medium roast" id="medium-roast">
+                <figcaption>
+                  Our specialty light roasts provide unique and innovative takes on traditional production methods that result in exciting, different coffees that push the .
+                  boundaries of what coffee tastes like. Expect to find unique, floral, frutiy and weird notes in these offerings. Weird is wonderful!
+                </figcaption>
+              </div>
+              <div id="prod3">
+                <h2>Dark Roast</h2>
+                <img src="https://s3-eu-west-1.amazonaws.com/yi-files/content/2018/02/5a8af7949d519.jpg" alt="dark roast">
+                <figcaption>
+                  Cold wintery days, campfires, log cabins, the great outdoors, etc. These are the images conjured up when enjoying one of our dark roasts. Bold, strong flavors 
+                  with notes of smoke, caramel, earth and wood. We pride ourselves on producing great dark roasts that are full bodied and full flavored without that char 
+                  or burnt flavor you might associate with dark roasts. Not for the faint of heart.
+                </figcaption>
+              </div>
           </div>
         </div>
         
         <div id="contact">
-          <h2>Be Our Friend</h2>
+          <h1>Be Our Friend</h1>
           <form action=" https://www.freecodecamp.com/email-submit" id="form">
             <label for="email">Get in touch!</label></br>
             <input type="text" id="email" name="email" placeholder="Email">
             <input type='submit' value="Subscribe">
           </form>
         </div>
+
+        <footer id="footer">Copyright Information</footer>
       </body>
-      <footer id="footer">Copyright Information</footer>
 </html>

@@ -1,0 +1,22 @@
+:root {
+    --product-image-width: 466px;
+}
+
+#beans {
+    text-align: center;
+}
+#products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+#products img, figcaption {
+    width: var(--product-image-width);
+}
+
+#products figcaption {
+    padding-top: 10px;
+}

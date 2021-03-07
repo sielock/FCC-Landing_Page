@@ -4,27 +4,39 @@
       <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header id='header'>
+        <header>
           <div class="img-container">
-            <img src="https://www.logoground.com/uploads/2018152902018-03-213075636Coffee-Shop-Logo.jpg" alt="logo" id="header-img">
+            <img src="https://image.freepik.com/free-vector/coffee-logo-with-cup_23-2147502485.jpg" alt="logo" id="header-img" height="20px">
+            <h1 style="color: white">Coffee Company</h1>
           </div>
-          <nav id="links">
-            <a href="#basics">Basics</a>
-            <a href="#background">Background</a>
-            <a href="#beans">Beans</a>
-            <a href="#contact">Contact</a>
+
+          <div id="toggle-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <nav>
+            <a href="#basics" onclick="toggleMenu()">Basics</a>
+            <a href="#background" onclick="toggleMenu()">Background</a>
+            <a href="#beans" onclick="toggleMenu()">Beans</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
           </nav>
         </header>
-        
+
+      <div id="container">
         <div id="basics">
-          <div id="who">
+          <div class="who">
             <h1>Who We Are</h1>
-          </div id="what">
-          <div>
-            <h1>What We Do</h1>
+            <p>We roast coffee.</p>
           </div>
-          <div id="why">
+          <div class="what">
+            <h1>What We Do</h1>
+            <p>We roast coffee.</p>
+          </div>
+          <div class="why">
             <h1>Why We Do It</h1>
+            <p>We like coffee.</p>
           </div>
         </div>
         
@@ -35,7 +47,7 @@
         
         <div id="beans">
           <h1>Beans</h1>
-            <div id="products">
+            <div class="products">
               <div id="prod1">
                 <h2>Light Roast</h2>
                 <img src="https://yi-files.s3.eu-west-1.amazonaws.com/products/774000/774985/1322675-cover.jpg" alt="light roast" id="light-roast">
@@ -74,6 +86,15 @@
           </form>
         </div>
 
+      </div>
+
         <footer id="footer">Copyright Information</footer>
+
+        <script>
+          function toggleMenu() {
+            let navbar = document.querySelector('nav')
+            navbar.classList.toggle('show')
+          }
+        </script>
       </body>
 </html>

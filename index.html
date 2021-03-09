@@ -4,7 +4,7 @@
       <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
+        <header id="header">
           <div class="img-container">
             <img src="https://image.freepik.com/free-vector/coffee-logo-with-cup_23-2147502485.jpg" alt="logo" id="header-img" height="20px">
             <h1 style="color: white">Coffee Company</h1>
@@ -16,33 +16,36 @@
             <span></span>
           </div>
 
-          <nav>
-            <a href="#basics" onclick="toggleMenu()">Basics</a>
-            <a href="#background" onclick="toggleMenu()">Background</a>
-            <a href="#beans" onclick="toggleMenu()">Beans</a>
-            <a href="#contact" onclick="toggleMenu()">Contact</a>
+          <nav id="nav-bar">
+            <a href="#basics" onclick="toggleMenu()" class="nav-link">Basics</a>
+            <a href="#background" onclick="toggleMenu()" class="nav-link">Background</a>
+            <a href="#beans" onclick="toggleMenu()" class="nav-link">Beans</a>
+            <a href="#contact" onclick="toggleMenu()" class="nav-link">Contact</a>
           </nav>
         </header>
 
       <div id="container">
         <div id="basics">
+          <h1>Basics</h1>
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/nyDnQQSUfL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="background">
+          <h1>Background</h1>
           <div class="who">
-            <h1>Who We Are</h1>
-            <p>We roast coffee.</p>
+            <h2>Who We Are</h2>
+            <p>We roast coffee ethically sourced from farms all over the world. We emphasize sourcing high quality beans from farms that care as much as 
+              we do about the product. We want everyone involved, from the farmer, to you, to be able to have the best experience possible with our products.
+            </p>
           </div>
           <div class="what">
-            <h1>What We Do</h1>
+            <h2>What We Do</h2>
             <p>We roast coffee.</p>
           </div>
           <div class="why">
-            <h1>Why We Do It</h1>
+            <h2>Why We Do It</h2>
             <p>We like coffee.</p>
           </div>
-        </div>
-        
-        <div id="background">
-          <h1>Background</h1>
-          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/nyDnQQSUfL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         
         <div id="beans">
@@ -77,22 +80,24 @@
           </div>
         </div>
         
-        <div id="contact">
-          <h1>Be Our Friend</h1>
-          <form action=" https://www.freecodecamp.com/email-submit" id="form">
-            <label for="email">Get in touch!</label></br>
-            <input type="text" id="email" name="email" placeholder="Email">
-            <input type='submit' value="Subscribe">
-          </form>
-        </div>
+
 
       </div>
 
-        <footer id="footer">Copyright Information</footer>
+        <footer id="footer">
+          <div id="contact">
+            <h1>Be Our Friend</h1>
+            <form action=" https://www.freecodecamp.com/email-submit" id="form">
+              <label for="email">Get in touch!</label>
+              <input type="email" id="email" name="email" placeholder="Email"></br></br>
+              <input type='submit' value="Subscribe" id="submit">
+            </form>
+          </div>
+        </footer>
 
         <script>
           function toggleMenu() {
-            let navbar = document.querySelector('nav')
+            let navbar = document.querySelector('nav-bar')
             navbar.classList.toggle('show')
           }
         </script>

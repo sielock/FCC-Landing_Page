@@ -2,7 +2,7 @@ body, html {
     margin: 0px;
     scroll-behavior: smooth;
     height: 100%;
-    font-size: 16px;
+    font-size: calc(0.85em + 1vw)
 }
 
 header {
@@ -29,7 +29,7 @@ header {
 
 .img-container h1 {
     height: fit-content;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     align-self: center;
 }
 
@@ -61,6 +61,7 @@ header {
     align-items: center;
     background: #362828;
     height: 100vh;
+    width: 30%;
     font-size: 1rem;
 }
 
@@ -73,29 +74,28 @@ header {
     text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
-    
-}
-
 @media screen and (min-width: 1024px) {
     #toggle-menu {
         display: none;
     }
     
     #nav-bar {
+        display: block;
         justify-self: end;
         align-self: center;
-        font-size: 1.6rem;
+        padding: 1em;
+        font-size: 0.9em;
     }
     
     .nav-link {
         color: white;
         text-decoration: none;
         padding: 0px 10px 0px 10px;
+        border: none;
     }
     
     .nav-link:hover {
-        text-decoration: underline;
+        text-decoration: underline 4px;
     }
 }
 

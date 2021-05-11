@@ -2,7 +2,7 @@ body, html {
     margin: 0px;
     scroll-behavior: smooth;
     height: 100%;
-    font-size: calc(0.85em + 1vw)
+    font-size: calc(0.90em + 1vw)
 }
 
 header {
@@ -13,6 +13,14 @@ header {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+}
+
+h1 {
+    font-size: 1.3em;
+}
+
+h2 {
+    font-size: 1rem;
 }
 
 #header-img {
@@ -28,8 +36,7 @@ header {
 }
 
 .img-container h1 {
-    height: fit-content;
-    font-size: 1.5em;
+    color: #fff;
     align-self: center;
 }
 
@@ -44,7 +51,7 @@ header {
     height: 3px;
     width: 100%;
     align-self: center;
-    background-color: white;
+    background-color: #fff;
     margin: 8px;
 }
 
@@ -61,76 +68,41 @@ header {
     align-items: center;
     background: #362828;
     height: 100vh;
-    width: 30%;
-    font-size: 1rem;
+    width: 30vw;
+    padding: 0.5em;
 }
 
 .nav-link {
-    padding: 1rem;
-    border: 1px white solid;
-    width: 90%;
+    padding: 0.5em;
+    border-top: 1px #fff solid;
+    width: 100%;
     text-align: left;
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
-@media screen and (min-width: 1024px) {
-    #toggle-menu {
-        display: none;
-    }
-    
-    #nav-bar {
-        display: block;
-        justify-self: end;
-        align-self: center;
-        padding: 1em;
-        font-size: 0.9em;
-    }
-    
-    .nav-link {
-        color: white;
-        text-decoration: none;
-        padding: 0px 10px 0px 10px;
-        border: none;
-    }
-    
-    .nav-link:hover {
-        text-decoration: underline 4px;
-    }
-}
-
-.parallax {
+/* .parallax {
     background-image: url("https://cdn.shopify.com/s/files/1/1470/2456/articles/blog-banner_1400x.progressive.jpg?v=1544022516");
-}
+} */
 
 #container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "basics"
-        "back"
-        "beans"
-        "footer";
-    row-gap: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 #basics {
     width: 100%;
-    padding-top: 200px;
-    grid-area: basics;
     justify-self: center;
     text-align: center;
-    font-size: 1.6em;
-    padding-bottom: 100px;
-    margin-bottom: 90px;
+    margin-bottom: 1em;
 }
 
 #video {
     border: none;
+    max-height: 40vh;
 }
 
-#background {
+/* #background {
     font-size: 1.6em;
     padding-top: 200px;
     grid-area: back;
@@ -141,28 +113,29 @@ header {
     text-align: center;
     padding-bottom: 11vh;
     background-color: #7e4513dc;
-}
+} */
 
-.who, .what, .why {
+/* .who, .what, .why {
     width: 50%;
     align-self: center;
     justify-self: center;
     padding-top: 20px;
-}
+} */
 
-#background iframe {
+/* #background iframe {
     padding: 20px;
-}
+} */
 
-#beans {
+/* #beans {
     font-size: 1.6em;
     padding-top: 150px;
     margin-top: 100px;
     grid-area: beans;
     text-align: center;
     padding-bottom: 200px;
-}
-.products {
+} */
+
+/* .products {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -181,24 +154,121 @@ header {
 .products figure {
     padding-top: 10px;
     text-align: left;
-}
+} */
 
-#footer {
-    font-size: 1.6em;
-    padding-bottom: 30px;
-    grid-area: footer;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    background-color: #2e1a05d0;
-    color: white;
+/* #contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: #362828;
+    color: #fff;
+    width: 100%;
+    max-height: 20vh;
     text-align: center;
 }
 
+.copyright {
+    align-self: center;
+    justify-self: end;
+    font-size: 1em;
+    margin-right: 1em;
+}
+
+#form  {
+    justify-self: start;
+    margin-left: 0.4em;
+}
+
+#form label {
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 0.6em;
+}
+
+#email, #submit {
+    margin-bottom: 1em;
+}
+
 #email {
-    height: 25px;
+    height: 20px;
 }
 
 #submit {
-    height: 32px;
+    height: 27px;
+} */
+
+/*** Responsive media queries for larger screens ***/
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    #toggle-menu {
+        display: none;
+    }
+    
+    #nav-bar {
+        display: block;
+        justify-self: end;
+        align-self: center;
+        padding-right: 1em;
+        font-size: 0.7em;
+    }
+    
+    .nav-link {
+        color: white;
+        text-decoration: none;
+        padding: 0px 10px 0px 10px;
+        border: none;
+    }
+    
+    .nav-link:hover {
+        text-decoration: underline 3px;
+    }
+
+    /* #contact{
+        max-height: 20vh;
+    }
+
+    #contact {
+        position: absolute;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background: #362828;
+        color: #fff;
+        width: 100%;
+        max-height: 10vh;
+        text-align: center;
+    }
+    
+    .copyright {
+        align-self: center;
+        justify-self: end;
+        font-size: 0.5em;
+        margin-right: 1em;
+    }
+    
+    #form  {
+        justify-self: start;
+        margin-left: 0.4em;
+    }
+    
+    #form label {
+        display: inline-block;
+        font-size: 0.9rem;
+        padding: 0.6em;
+    }
+    
+    #email, #submit {
+        margin-bottom: 1em;
+    }
+    
+    #email {
+        height: 20px;
+    }
+    
+    #submit {
+        height: 27px;
+    } */
 }

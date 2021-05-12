@@ -88,13 +88,14 @@ h2 {
 #container {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    background: #608a54;
 }
 
 #basics {
-    width: 100%;
     justify-self: center;
     text-align: center;
-    margin-bottom: 1em;
+    padding: 1em;
 }
 
 #video {
@@ -102,29 +103,21 @@ h2 {
     max-height: 40vh;
 }
 
-/* #background {
-    font-size: 1.6em;
-    padding-top: 200px;
-    grid-area: back;
-    width: 100%;
+#background {
     display: flex;
+    padding: 1em;
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    padding-bottom: 11vh;
-    background-color: #7e4513dc;
-} */
+    background-color: #ddd8d8;
+}
 
-/* .who, .what, .why {
-    width: 50%;
-    align-self: center;
-    justify-self: center;
-    padding-top: 20px;
-} */
+.who, .what, .why {
+    margin-top: 20px;
+}
 
-/* #background iframe {
-    padding: 20px;
-} */
+#basics iframe {
+    padding: 1em;
+}
 
 /* #beans {
     font-size: 1.6em;

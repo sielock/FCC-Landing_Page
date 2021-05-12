@@ -151,21 +151,16 @@ h2 {
 }
 
 
-/* #contact {
-    display: grid;
-    grid-template-columns: 50% 50%;
+#contact {
     background: #362828;
     color: #fff;
     width: 100%;
-    max-height: 20vh;
     text-align: center;
 }
 
 .copyright {
-    align-self: center;
-    justify-self: end;
-    font-size: 1em;
-    margin-right: 1em;
+    font-size: 0.6em;
+    padding-bottom: 0.6em;
 }
 
 #form  {
@@ -179,19 +174,15 @@ h2 {
     padding: 0.6em;
 }
 
-#email, #submit {
-    margin-bottom: 1em;
-}
-
 #email {
     height: 20px;
 }
 
 #submit {
     height: 27px;
-} */
+}
 
-/*** Responsive media queries for larger screens ***/
+/***Styling for larger screens ***/
 
 @media screen and (min-width: 1024px) {
     h1 {

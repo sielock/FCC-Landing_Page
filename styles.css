@@ -1,3 +1,10 @@
+html {
+    background: url("coffee-background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+
 body{
     height: 100%;
     margin: 0px;
@@ -97,12 +104,6 @@ nav.scroll-down {
     height: 100%;
     color: #fff;
     text-align: center;
-
-    background-image: url("coffee-background.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .heading, 
@@ -176,18 +177,9 @@ nav.scroll-down {
     color: #fff;
 }
 
-/*** Styling for tablets ***/
-@media screen and (min-width: 768px) {
-
-};
-
-/***Styling for computer screens ***/
+/***Styling for larger screens ***/
 
 @media screen and (min-width: 1024px) {
-    h1 {
-        font-size: 1em;
-    }
-
     #toggle-menu {
         display: none;
     }
@@ -197,7 +189,6 @@ nav.scroll-down {
         justify-self: end;
         align-self: center;
         padding-right: 1em;
-        font-size: 0.7em;
     }
     
     .nav-link {
@@ -210,50 +201,4 @@ nav.scroll-down {
     .nav-link:hover {
         text-decoration: underline 3px;
     }
-
-    /* #contact{
-        max-height: 20vh;
-    }
-
-    #contact {
-        position: absolute;
-        bottom: 0;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        background: #362828;
-        color: #fff;
-        width: 100%;
-        max-height: 10vh;
-        text-align: center;
-    }
-    
-    .copyright {
-        align-self: center;
-        justify-self: end;
-        font-size: 0.5em;
-        margin-right: 1em;
-    }
-    
-    #form  {
-        justify-self: start;
-        margin-left: 0.4em;
-    }
-    
-    #form label {
-        display: inline-block;
-        font-size: 0.9rem;
-        padding: 0.6em;
-    }
-    
-    #email, #submit {
-        margin-bottom: 1em;
-    }
-    
-    #email {
-        height: 20px;
-    }
-    
-    #submit {
-        height: 27px;
-    } */
 }

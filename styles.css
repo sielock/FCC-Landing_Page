@@ -17,7 +17,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 0.8em;
 }
 
 nav {
@@ -131,25 +135,30 @@ nav.scroll-down {
     border: none;
 }
 
-.who, .what, .why {
-    margin-top: 20px;
-    padding: 0.5em;
-    background: #362828;
-}
-
-.products {
+#info, #products {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    width: 100%;
+    text-align: left;
 }
 
-.products div {
+.who, .what, .why {
+    padding: 2em;
+    background: #362828;
+    margin: 1em 0;
+}
+
+#products h2, #info h2 {
+    text-align: center;
+}
+
+.product {
     margin: 1em 0;
     background: #362828;
 }
 
-.products img {
+#products img {
     width: 100%;
 }
 
@@ -200,5 +209,39 @@ nav.scroll-down {
     
     .nav-link:hover {
         text-decoration: underline 3px;
+    }
+
+    .heading {
+        margin: 0.5em auto;
+    }
+
+    .heading {
+        width: 93%;
+    }
+
+    #video {
+        width: 70%;
+    }
+
+
+    .who, .what, .why,
+    .product {
+        width: 9em;
+        height: 18em;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% auto;
+        margin: 0.5em;
+    }
+
+    #products img {
+        height: inherit;
+    }
+
+    .product {
+        width: 11em;
+        height: 30em;
+        padding: 1em;
+        margin: 0.5em;
     }
 }
